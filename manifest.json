@@ -1,0 +1,19 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Pass for Ulauncher",
+  "description": "A Ulauncher extension for the standard UNIX password manager.",
+  "developer_name": "Alexander Carter",
+  "icon": "images/shield-lock.svg",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "pass",
+      "type": "keyword",
+      "name": "pass",
+      "description": "The standard UNIX password manager",
+      "default_value": "pass"
+    }
+  ]
+}
