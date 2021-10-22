@@ -16,7 +16,7 @@ class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         items = []
         for i in range(5):
-            items.append(ExtensionResultItem(icon='images/file-lock.png',
+            items.append(ExtensionResultItem(icon='images/file-earmark-lock.svg',
                                              name='Password %s' % i,
                                              description='This is password #%s' % i,
                                              on_enter=HideWindowAction()))
