@@ -32,7 +32,7 @@ class KeywordQueryEventListener(EventListener):
 
         items = []
         for pfile in password_files:
-            items.append(ExtensionResultItem(icon='images/file-earmark-lock.svg',
+            items.append(ExtensionResultItem(icon='images/application-pgp-encrypted.svg',
                                              name=f'{pfile.stem}',
                                              description=f'{pfile}'.replace(str(Path.home()), "~"),
                                              on_enter=ExtensionCustomAction(pfile)))

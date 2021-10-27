@@ -3,7 +3,7 @@
   "name": "Pass for Ulauncher",
   "description": "A Ulauncher extension for the standard UNIX password manager.",
   "developer_name": "Alexander Carter",
-  "icon": "images/shield-lock.svg",
+  "icon": "images/folder-white-locked.svg",
   "options": {
     "query_debounce": 0.1
   },
