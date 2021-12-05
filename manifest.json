@@ -3,17 +3,24 @@
   "name": "Pass for Ulauncher",
   "description": "A Ulauncher extension for the standard UNIX password manager.",
   "developer_name": "Alexander Carter",
-  "icon": "images/folder-white-locked.svg",
+  "icon": "images/application-pgp-encrypted.svg",
   "options": {
     "query_debounce": 0.1
   },
   "preferences": [
     {
-      "id": "pass",
+      "id": "keyword",
       "type": "keyword",
       "name": "pass",
-      "description": "The standard UNIX password manager",
+      "description": "The keyword to envoke this extension",
       "default_value": "pass"
+    },
+    {
+      "id": "max_display_lines",
+      "type": "input",
+      "name": "max_display_lines",
+      "description": "The maximum number of lines to display at once",
+      "default_value": "8"
     }
   ]
 }

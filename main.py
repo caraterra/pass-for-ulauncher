@@ -8,9 +8,8 @@ from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAct
 from pathlib import Path
 import os
 
-prefix = None
-# TODO: Make Maximum visible options a user option
-MAX_VIS_OPTIONS=8
+prefix = ""
+
 
 def sort_by_basename(fname):
     return fname.name
@@ -32,11 +31,15 @@ class KeywordQueryEventListener(EventListener):
 
         items = []
         for pfile in password_files:
-            items.append(ExtensionResultItem(icon='images/application-pgp-encrypted.svg',
-                                             name=f'{pfile.stem}',
-                                             description=f'{pfile}'.replace(str(Path.home()), "~"),
-                                             on_enter=ExtensionCustomAction(pfile)))
-            if (len(items) >= MAX_VIS_OPTIONS):
+            items.append(
+                ExtensionResultItem(
+                    icon="images/application-pgp-encrypted.svg",
+                    name=f"{pfile.stem}",
+                    description=f"{pfile}".replace(str(Path.home()), "~"),
+                    on_enter=ExtensionCustomAction(pfile),
+                )
+            )
+            if len(items) >= int(extension.preferences["max_display_lines"]):
                 break
 
         return RenderResultListAction(items)
