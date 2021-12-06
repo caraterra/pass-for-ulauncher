@@ -10,7 +10,7 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 </p>
 
 <p align="center">
-<img src="./images/pass-for-ulauncher-cropped.gif" width=400 height=320 />
+<img src="./images/pass-for-ulauncher-cropped.gif" />
 </p>
   
 ## Roadmap
