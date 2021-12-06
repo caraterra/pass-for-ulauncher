@@ -3,9 +3,7 @@
 
 A Ulauncher wrapper around the [standard UNIX password manager](https://www.passwordstore.org/).
 
-<p align="center">
-<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkBlue"/>
-
+<p align="left">
 <img src="https://img.shields.io/github/license/caraterra/pass-for-ulauncher?style=for-the-badge" />
 
 <img src="https://img.shields.io/github/v/release/caraterra/pass-for-ulauncher?style=for-the-badge" />
