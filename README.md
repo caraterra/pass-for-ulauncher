@@ -11,7 +11,7 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 
 ## Demo
 
-![demo usage](./images/demo-usage.gif)
+![ulauncher gif](./images/pass-for-ulauncher-cropped.gif)
 
 ## Roadmap
 
