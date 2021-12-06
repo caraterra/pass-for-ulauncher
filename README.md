@@ -9,10 +9,8 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 <img src="https://img.shields.io/github/v/release/caraterra/pass-for-ulauncher?style=for-the-badge" />
 </p>
 
-## Demo
-
-![ulauncher gif](./images/pass-for-ulauncher-cropped.gif)
-
+![screenshot](./images/pass-for-ulauncher-trans-cropped.png)
+  
 ## Roadmap
 
 - [ ]  A seperate extension for [pass-otp](https://github.com/tadfisher/pass-otp)
