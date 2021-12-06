@@ -21,6 +21,17 @@
       "name": "Maximum lines to dispaly",
       "description": "The maximum number of lines to display at once",
       "default_value": "8"
+    },
+    {
+      "id": "show_notification",
+      "type": "select",
+      "name": "Notificaitons",
+      "description": "Whether or not to show a notification when a password has been copied",
+      "default_value": "yes",
+      "options": [
+        "yes",
+        "no"
+      ]
     }
   ]
 }

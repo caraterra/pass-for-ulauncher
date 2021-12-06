@@ -63,11 +63,12 @@ class ItemEnterEventListener(EventListener):
         pass_arg = str(event.get_data().relative_to(prefix)).replace(".gpg", "")
         pass_cmd = f"pass show -c {pass_arg} > /dev/null".format(pass_arg)
         system(pass_cmd)
-        Notify.Notification.new(
-            f"Copied {pass_arg} to clipboard.",
-            "Will clear in 45 seconds.",
-            "object-unlocked",
-        ).show()
+        if extension.preferences["show_notification"] == "yes":
+            Notify.Notification.new(
+                f"Copied {pass_arg} to clipboard.",
+                "Will clear in 45 seconds.",
+                "object-unlocked",
+            ).show()
 
 
 if __name__ == "__main__":
