@@ -12,13 +12,13 @@
       "id": "keyword",
       "type": "keyword",
       "name": "pass",
-      "description": "The keyword to envoke this extension",
+      "description": "The standard UNIX password manager",
       "default_value": "pass"
     },
     {
       "id": "max_display_lines",
       "type": "input",
-      "name": "max_display_lines",
+      "name": "Maximum lines to dispaly",
       "description": "The maximum number of lines to display at once",
       "default_value": "8"
     }
