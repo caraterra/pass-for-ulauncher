@@ -9,9 +9,7 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 <img src="https://img.shields.io/github/v/release/caraterra/pass-for-ulauncher?style=for-the-badge" />
 </p>
 
-<p align="center">
-<img src="./images/pass-for-ulauncher-cropped.gif" />
-</p>
+![screenshot](./images/pass-for-ulauncher-trans-cropped.png)
   
 ## Roadmap
 
