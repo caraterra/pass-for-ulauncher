@@ -1,7 +1,8 @@
 """Used for getting the user's PASSWORD_STORE_DIR env var"""
-from os import getenv, system
+import subprocess
+from os import getenv
 from pathlib import Path
-from gi.repository import Notify, GdkPixbuf
+from gi.repository import Notify
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
 from ulauncher.api.shared.event import KeywordQueryEvent, ItemEnterEvent
@@ -61,8 +62,7 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         pass_arg = str(event.get_data().relative_to(prefix)).replace(".gpg", "")
-        pass_cmd = f"pass show -c {pass_arg} > /dev/null".format(pass_arg)
-        system(pass_cmd)
+        subprocess.call(["pass", "show", "-c", pass_arg])
         if extension.preferences["show_notification"] == "yes":
             Notify.Notification.new(
                 f"Copied {pass_arg} to clipboard.",
