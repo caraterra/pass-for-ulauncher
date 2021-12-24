@@ -10,10 +10,6 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 </p>
 
 ![screenshot](./images/pass-for-ulauncher-trans-cropped.png)
-  
-## Roadmap
-
-- [ ]  A seperate extension for [pass-otp](https://github.com/tadfisher/pass-otp)
 
 
 ## Acknowledgements
@@ -23,4 +19,5 @@ A Ulauncher wrapper around the [standard UNIX password manager](https://www.pass
 ## Related
 
 - A more [fully-featured extension](https://github.com/yannishuber/pass-ulauncher/blob/master/README.md) by yannishuber
+- A [Ulauncher extension for pass-otp](https://github.com/caraterra/pass-otp-for-ulauncher), written by me!
 
