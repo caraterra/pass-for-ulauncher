@@ -62,13 +62,18 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         pass_arg = str(event.get_data().relative_to(prefix)).replace(".gpg", "")
-        subprocess.call(["pass", "show", "-c", pass_arg])
-        if extension.preferences["show_notification"] == "yes":
-            Notify.Notification.new(
-                f"Copied {pass_arg} to clipboard.",
-                "Will clear in 45 seconds.",
-                "object-unlocked",
-            ).show()
+        with subprocess.Popen(
+            ["pass", "show", "-c", pass_arg], stdout=subprocess.PIPE
+        ) as process:
+            if (
+                extension.preferences["show_notification"] == "yes"
+                and process.returncode == 0
+            ):
+                Notify.Notification.new(
+                    f"Copied {pass_arg} to clipboard.",
+                    "Will clear in 45 seconds.",
+                    "object-unlocked",
+                ).show()
 
 
 if __name__ == "__main__":
