@@ -65,6 +65,7 @@ class ItemEnterEventListener(EventListener):
         with subprocess.Popen(
             ["pass", "show", "-c", pass_arg], stdout=subprocess.PIPE
         ) as process:
+            process.wait()
             if (
                 extension.preferences["show_notification"] == "yes"
                 and process.returncode == 0
